@@ -3,87 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Properties | ProBuild Services</title>
+  <title>Property & Plots | ProBuild</title>
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">ProBuild</div>
       <ul class="nav-links">
         <li><a href="index.html#home">Home</a></li>
         <li><a href="property.html" class="active">Property</a></li>
-        <li><a href="index.html#construction">Construction</a></li>
-        <li><a href="index.html#packers">Packers & Movers</a></li>
-        <li><a href="index.html#manpower">Manpower</a></li>
+        <li><a href="construction.html">Construction</a></li>
+        <li><a href="packers.html">Packers & Movers</a></li>
+        <li><a href="manpower.html">Manpower</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Categories -->
+  <!-- Hero Section -->
+  <section class="hero" style="background: url('assets/property-bg.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Buy, Sell & Rent Property with ProBuild</h1>
+      <p>Find your dream home, commercial space, or warehouse — or list your property for sale.</p>
+    </div>
+  </section>
+
+  <!-- Property Categories -->
   <section class="property-categories">
-    <h2>Explore Property Categories</h2>
+    <h2>Explore Property Types</h2>
     <div class="category-grid">
       <div class="category-card">
-        <img src="assets/categories/residential.jpg" alt="">
+        <img src="assets/property/residential.jpg" alt="Residential Property">
         <h3>Residential</h3>
       </div>
+
       <div class="category-card">
-        <img src="assets/categories/commercial.jpg" alt="">
+        <img src="assets/property/commercial.jpg" alt="Commercial Property">
         <h3>Commercial</h3>
       </div>
+
       <div class="category-card">
-        <img src="assets/categories/plots.jpg" alt="">
-        <h3>Plots</h3>
-      </div>
-      <div class="category-card">
-        <img src="assets/categories/rentals.jpg" alt="">
-        <h3>Rentals</h3>
+        <img src="assets/property/warehouse.jpg" alt="Warehouse Property">
+        <h3>Warehouse</h3>
       </div>
     </div>
   </section>
 
-  <!-- Property Listings -->
-  <section class="property-list">
-    <h2>Available Properties</h2>
+  <!-- Buttons Section -->
+  <section class="services">
+    <h2>What Would You Like To Do?</h2>
+    <div style="margin-top:30px;">
+      <a href="#buy" class="btn-primary">🏠 Buy Property</a>
+      <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-primary" style="background:white; color:#0a73b1; margin-left:20px;">📄 Sell Property</a>
+    </div>
+  </section>
+
+  <!-- Property List Section -->
+  <section id="buy" class="property-list">
+    <h2>Available Properties for Sale</h2>
     <div class="property-grid">
+      <!-- Dummy Properties -->
       <div class="property-card">
-        <img src="assets/properties/prop1.jpg" alt="">
-        <h3>3 BHK Apartment in Sector 62</h3>
-        <p class="price">₹ 65 Lakh</p>
-        <p>Spacious apartment with modular kitchen and parking.</p>
-        <a href="#" class="btn-primary">View Details</a>
+        <img src="assets/property/sample1.jpg" alt="Property 1">
+        <h3>2BHK Apartment - Sector 62, Noida</h3>
+        <p class="price">₹65 Lakhs</p>
+        <p>Fully furnished 2BHK flat near metro station, ready to move.</p>
       </div>
 
       <div class="property-card">
-        <img src="assets/properties/prop2.jpg" alt="">
-        <h3>Luxury Villa in Alpha 2</h3>
-        <p class="price">₹ 1.2 Cr</p>
-        <p>Independent villa with garden, 24×7 security, and premium interiors.</p>
-        <a href="#" class="btn-primary">View Details</a>
+        <img src="assets/property/sample2.jpg" alt="Property 2">
+        <h3>Office Space - Sector 16, Noida</h3>
+        <p class="price">₹1.2 Cr</p>
+        <p>Prime location office space in commercial complex, 1000 sq.ft.</p>
       </div>
 
       <div class="property-card">
-        <img src="assets/properties/prop3.jpg" alt="">
-        <h3>Commercial Office Space</h3>
-        <p class="price">₹ 80 000 / month</p>
-        <p>Fully-furnished office with parking and meeting rooms.</p>
-        <a href="#" class="btn-primary">View Details</a>
+        <img src="assets/property/sample3.jpg" alt="Property 3">
+        <h3>Warehouse - Surajpur Industrial Area</h3>
+        <p class="price">₹85 Lakhs</p>
+        <p>Spacious warehouse with good connectivity and power backup.</p>
       </div>
 
       <div class="property-card">
-        <img src="assets/properties/prop4.jpg" alt="">
-        <h3>Plot for Sale – Sector Zeta</h3>
-        <p class="price">₹ 45 Lakh</p>
-        <p>Residential plot with clear title and utilities ready.</p>
-        <a href="#" class="btn-primary">View Details</a>
+        <img src="assets/property/sample4.jpg" alt="Property 4">
+        <h3>Residential Plot - Greater Noida</h3>
+        <p class="price">₹45 Lakhs</p>
+        <p>120 sq. yard plot in a gated society, ready for construction.</p>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 ProBuild Services | Greater Noida & Noida | All Rights Reserved</p>
   </footer>
