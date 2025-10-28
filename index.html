@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
   <!-- Navbar -->
   <header>
     <nav class="navbar">
@@ -25,11 +25,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="background: url('assets/hero-bg.jpg') center/cover no-repeat;">
+  <section class="hero" id="home" style="background: url('assets/hero-bg.jpg') center/cover no-repeat;">
     <div class="hero-content">
       <h1>Welcome to ProBuild Services</h1>
-      <p>Reliable Property, Construction, Packers & Movers, and Manpower solutions across Noida & Greater Noida.</p>
+      <p>Your one-stop solution for Property, Construction, Packers & Movers, and Manpower services.</p>
+
       <a href="#services" class="btn-primary">Explore Services</a>
+      
+      <!-- 🔎 Search Bar -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search Properties, Packers, Manpower..." />
+        <button onclick="searchRedirect()">Search</button>
+      </div>
     </div>
   </section>
 
@@ -37,26 +44,31 @@
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="service-grid">
-      <div class="service-card">
-        <img src="assets/service-icons/home-shifting.png" alt="Home Shifting">
+
+      <a href="packers.html" class="service-card">
+        <img src="assets/service-icons/home-shifting.png" alt="">
         <h3>Home Shifting</h3>
-        <p>Door-to-door moving for apartments, villas, and flats with complete packing support.</p>
-      </div>
-      <div class="service-card">
-        <img src="assets/service-icons/office.png" alt="Office Relocation">
+        <p>Door-to-door moving for apartments, villas, and flats.</p>
+      </a>
+
+      <a href="packers.html" class="service-card">
+        <img src="assets/service-icons/office.png" alt="">
         <h3>Office Relocation</h3>
-        <p>Professional and efficient office shifting including furniture and IT equipment.</p>
-      </div>
-      <div class="service-card">
-        <img src="assets/service-icons/storage.png" alt="Storage Facility">
+        <p>Professional and efficient shifting for offices and IT setups.</p>
+      </a>
+
+      <a href="packers.html" class="service-card">
+        <img src="assets/service-icons/storage.png" alt="">
         <h3>Storage & Warehousing</h3>
-        <p>Safe and affordable storage for short and long durations with 24x7 monitoring.</p>
-      </div>
-      <div class="service-card">
-        <img src="assets/service-icons/labor.png" alt="Loading Unloading">
+        <p>Safe and secure storage solutions with monitoring.</p>
+      </a>
+
+      <a href="manpower.html" class="service-card">
+        <img src="assets/service-icons/labor.png" alt="">
         <h3>Loading & Unloading</h3>
-        <p>Trained workers ensure your goods are handled with care during every step.</p>
-      </div>
+        <p>Trained workforce for safe goods handling.</p>
+      </a>
+
     </div>
   </section>
 
@@ -66,39 +78,35 @@
     <div class="founders-grid">
       <div class="founder-card">
         <img src="assets/founders/santosh.jpg" alt="Santosh">
-        <h3>Mr. Santosh Gupta
-(Director- Real Estate & Construction)</h3>
+        <h3>Mr. Santosh Gupta<br>(Real Estate & Construction)</h3>
       </div>
       <div class="founder-card">
         <img src="assets/founders/parvej.jpg" alt="Parvej Khan">
-        <h3>Mr. Parvej Khan (Mr. Khan)
-(Director- Manpower Solution , Packers & Movers)</h3>
+        <h3>Mr. Parvej Khan<br>(Packers & Manpower)</h3>
       </div>
       <div class="founder-card">
-        <img src="assets/founders/sumit.jpg" alt="Sumit Chandila">
-        <h3>Mr. Sumit Nagar
-(Director- Real Estate & Vendor Relationship)</h3>
+        <img src="assets/founders/sumit.jpg" alt="Sumit Nagar">
+        <h3>Mr. Sumit Nagar<br>(Real Estate & Vendor)</h3>
       </div>
       <div class="founder-card">
         <img src="assets/founders/roshan.jpg" alt="Roshan Singh">
-        <h3>Mr. Roshan Singh
-(Director- Customer Relationship & Marketing)</h3>
+        <h3>Mr. Roshan Singh<br>(Customer & Marketing)</h3>
       </div>
     </div>
   </section>
 
-  <!-- Contact / CTA Section -->
+  <!-- Contact -->
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <p>Get in touch with ProBuild for your services.</p>
-    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-primary" style="background:white; color:#0a73b1;">Book via Google Form</a>
+    <a href="#" class="btn-primary" style="background:white; color:#0a73b1;">Book via Google Form</a>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 ProBuild Services | Greater Noida & Noida | All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
