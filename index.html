@@ -3,78 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProBuild Services | Greater Noida & Noida</title>
+  <title>ProBuild Services | Property, Construction & Moving Solutions</title>
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script defer src="main.js"></script>
 </head>
 
 <body>
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">ProBuild</div>
+      <div class="menu-toggle">&#9776;</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="property.html">Property</a></li>
-        <li><a href="#construction">Construction</a></li>
-        <li><a href="#packers">Packers & Movers</a></li>
-        <li><a href="#manpower">Manpower</a></li>
+        <li><a href="construction.html">Construction</a></li>
+        <li><a href="packers.html">Packers & Movers</a></li>
+        <li><a href="manpower.html">Manpower</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero -->
-  <section id="home" class="hero">
+  <section id="home" class="hero" style="background:url('assets/hero-bg.jpg') center/cover no-repeat;">
     <div class="hero-content">
-      <h1>Your Complete Property & Service Solution</h1>
-      <p>From plots to manpower — everything under one trusted platform in Greater Noida & Noida.</p>
-      <a href="property.html" class="btn-primary">Explore Properties</a>
+      <h1>One-Stop Solution for Property, Construction & Interiors</h1>
+      <p>Serving Noida & Greater Noida with trusted real estate and project services.</p>
+      <a href="property.html" class="btn-primary">Explore Services</a>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="construction" class="services">
-    <h2>Our Key Services</h2>
+  <section class="services">
+    <h2>Our Core Services</h2>
     <div class="service-grid">
       <div class="service-card">
-        <img src="assets/service-icons/property.png" alt="">
-        <h3>Plots & Property</h3>
-        <p>Buy, sell, or rent verified residential and commercial properties.</p>
+        <img src="assets/service-icons/property.png" alt="Property">
+        <h3>Property & Plots</h3>
+        <p>Buy, sell, or rent homes, offices, and industrial spaces hassle-free.</p>
       </div>
       <div class="service-card">
-        <img src="assets/service-icons/construction.png" alt="">
-        <h3>Construction & Interior</h3>
-        <p>Architecture, materials, furniture, and professional masons — all in one place.</p>
+        <img src="assets/service-icons/construction.png" alt="Construction">
+        <h3>Construction & Interiors</h3>
+        <p>From design to delivery — complete construction and renovation solutions.</p>
       </div>
       <div class="service-card">
-        <img src="assets/service-icons/packers.png" alt="">
+        <img src="assets/service-icons/packers.png" alt="Packers Movers">
         <h3>Packers & Movers</h3>
-        <p>Reliable moving and labor support for homes, offices, and industries.</p>
+        <p>Fast, safe, and reliable shifting for home, office, and warehouse goods.</p>
       </div>
       <div class="service-card">
-        <img src="assets/service-icons/manpower.png" alt="">
-        <h3>Manpower & Selection</h3>
-        <p>Hire pickers, packers, data-entry operators, apprentices, helpers, and more.</p>
+        <img src="assets/service-icons/manpower.png" alt="Manpower">
+        <h3>Manpower Supply</h3>
+        <p>Skilled labor, supervisors, and technicians for all-scale projects.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- CTA -->
   <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Let’s discuss your project or service needs today!</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
+    <h2>Let’s Build Something Great Together</h2>
+    <p>Contact our team to discuss your property, construction, or moving needs.</p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-primary" style="background:white; color:#0a73b1;">Book via Google Form</a>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 ProBuild Services | Greater Noida & Noida | All Rights Reserved</p>
+    <div class="footer-content">
+      <p>© 2025 ProBuild Services | Noida & Greater Noida | All Rights Reserved</p>
+      <div class="socials">
+        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></a>
+      </div>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/YOUR_NUMBER" class="whatsapp-float" target="_blank">
+    <img src="assets/icons/whatsapp.svg" alt="Chat on WhatsApp">
+  </a>
 </body>
 </html>
