@@ -115,4 +115,13 @@ footer{text-align:center;padding:18px;background:#e9e9e9;font-size:0.9rem;}
 .subcategory a:hover {
   text-decoration:underline;
 }
+/* CONFUSED SECTION */
+.confused {
+  background:#f0f8ff;
+  text-align:center;
+  padding:20px;
+  font-size:1.05em;
+  color:#0a73b1;
+  font-weight:600;
+}
 
