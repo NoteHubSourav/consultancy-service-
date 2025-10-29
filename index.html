@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProBuild Services | Home</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">ProBuild</div>
@@ -17,51 +19,115 @@
         <li><a href="construction.html">Construction</a></li>
         <li><a href="packers.html">Packers & Movers</a></li>
         <li><a href="manpower.html">Manpower</a></li>
-        <li><a href="serviceprovider.html">Service Provider</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="hero" style="background:url('assets/home/hero-bg.jpg') center/cover no-repeat;">
+  <!-- Hero Section -->
+  <section id="home" class="hero" style="background: url('assets/hero-bg.jpg') center/cover no-repeat;">
     <div class="hero-content">
       <h1>Welcome to ProBuild Services</h1>
-      <p>Your trusted aggregator for property, construction, manpower, and relocation services.</p>
-      <a href="serviceprovider.html" class="btn-primary">Join as Service Provider</a>
+      <p>Reliable Property, Construction, Packers & Movers, and Manpower solutions in Noida & Greater Noida.</p>
+
+      <!-- ✅ Search Bar -->
+      <form class="search-bar">
+        <input type="text" placeholder="Search Property, Warehouse, Manpower, Packers..." required>
+        <button type="submit">Search 🔍</button>
+      </form>
+
+      <a href="#services" class="btn-primary">Explore Services</a>
     </div>
   </section>
 
-  <section class="services">
-    <h2>Our Core Services</h2>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Main Services</h2>
     <div class="service-grid">
-      <div class="service-card"><img src="assets/service-icons/property.png"><h3>Property</h3><p>Buy, sell, or rent residential and commercial properties.</p></div>
-      <div class="service-card"><img src="assets/service-icons/construction.png"><h3>Construction</h3><p>From building homes to large-scale projects, we connect you to experts.</p></div>
-      <div class="service-card"><img src="assets/service-icons/packers.png"><h3>Packers & Movers</h3><p>Reliable home and office shifting solutions.</p></div>
-      <div class="service-card"><img src="assets/service-icons/manpower.png"><h3>Manpower</h3><p>Find skilled, semi-skilled, and unskilled workers quickly.</p></div>
+
+      <a href="property.html" class="service-card">
+        <div class="icon-box"><img src="assets/icons/property.png" alt="Property"></div>
+        <h3>Property & Plots</h3>
+        <p>Buy & Sell Residential, Commercial & Warehouse Properties.</p>
+      </a>
+
+      <a href="construction.html" class="service-card">
+        <div class="icon-box"><img src="assets/icons/construction.png" alt="Construction"></div>
+        <h3>Construction</h3>
+        <p>Premium Civil Work, Interiors & Building Materials.</p>
+      </a>
+
+      <a href="packers.html" class="service-card">
+        <div class="icon-box"><img src="assets/icons/packers.png" alt="Packers"></div>
+        <h3>Packers & Movers</h3>
+        <p>Home Shifting, Office Relocation & Storage Services.</p>
+      </a>
+
+      <a href="manpower.html" class="service-card">
+        <div class="icon-box"><img src="assets/icons/manpower.png" alt="Manpower"></div>
+        <h3>Manpower</h3>
+        <p>Masons, Plumbers, Technicians, Guards & Helpers.</p>
+      </a>
+
+      <!-- ✅ New Service Card Added -->
+      <a href="serviceprovider.html" class="service-card">
+        <div class="icon-box"><img src="assets/icons/provider.png" alt="Service Provider"></div>
+        <h3>Service Provider</h3>
+        <p>Are you a service provider? Join us to reach more customers.</p>
+      </a>
+
     </div>
   </section>
 
-  <!-- 🧱 New Section for Service Providers -->
-  <section class="services" style="background:#f1faff;">
-    <h2>Are You a Service Provider?</h2>
-    <p>Partner with <strong>ProBuild</strong> to get genuine customers for your services in Property, Construction, Packers & Movers, and Manpower.</p>
-    <a href="serviceprovider.html" class="btn-primary">Register Now</a>
+  <!-- Founders Section -->
+  <section class="founders">
+    <h2>Meet Our Founders</h2>
+    <div class="founders-grid">
+
+      <div class="founder-card">
+        <img src="assets/founders/santosh.jpg" alt="Santosh">
+        <h3 class="name">Mr. Santosh Gupta</h3>
+        <p class="role">Director – Real Estate & Construction</p>
+      </div>
+
+      <div class="founder-card">
+        <img src="assets/founders/parvej.jpg" alt="Parvej">
+        <h3 class="name">Mr. Parvej Khan</h3>
+        <p class="role">Director – Manpower & Packers Solutions</p>
+      </div>
+
+      <div class="founder-card">
+        <img src="assets/founders/sumit.jpg" alt="Sumit">
+        <h3 class="name">Mr. Sumit Nagar</h3>
+        <p class="role">Director – Vendor & Real Estate Relations</p>
+      </div>
+
+      <div class="founder-card">
+        <img src="assets/founders/roshan.jpg" alt="Roshan">
+        <h3 class="name">Mr. Roshan Singh</h3>
+        <p class="role">Director – Customer Success & Marketing</p>
+      </div>
+
+    </div>
   </section>
 
-  <!-- 🤔 Confused Section -->
-  <section class="confused">
-    <p>🤔 Are you confused? Talk to our customer executive: <strong>+91-9999999999</strong></p>
-  </section>
-
-  <!-- 📞 Contact Section -->
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@probuildservices.in" style="color:white;">info@probuildservices.in</a></p>
-    <p>Greater Noida, Uttar Pradesh</p>
+    <p>We are here to assist you in every service.</p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-primary" style="background:white; color:#0a73b1;">Submit Requirements</a>
   </section>
 
+  <!-- Help Section -->
+  <section class="help-section">
+    <h3>🤔 Are you confused?</h3>
+    <p>Talk to our customer executive at <strong>+91-98765-43210</strong></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 ProBuild Services | Greater Noida & Noida | All Rights Reserved</p>
+    <p>© 2025 ProBuild Services | Noida & Greater Noida</p>
   </footer>
+
 </body>
 </html>
