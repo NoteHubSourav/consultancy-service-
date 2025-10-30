@@ -4,33 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Service Provider Partnership | ProBuild</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <script>
-    // simple toggle with a slide effect
-    function toggleSection(id) {
-      const el = document.getElementById(id);
-      if (!el) return;
-      if (el.style.display === 'block') {
-        el.style.height = el.scrollHeight + 'px';
-        // trigger reflow then collapse
-        void el.offsetHeight;
-        el.style.transition = 'height 280ms ease';
-        el.style.height = '0';
-        setTimeout(()=>{ el.style.display='none'; el.style.height=''; el.style.transition=''; }, 300);
-      } else {
-        el.style.display = 'block';
-        el.style.height = '0';
-        void el.offsetHeight;
-        el.style.transition = 'height 280ms ease';
-        el.style.height = el.scrollHeight + 'px';
-        setTimeout(()=>{ el.style.height=''; el.style.transition=''; }, 300);
-      }
-    }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <!-- Navbar -->
+
+  <!-- ================= Navbar ================= -->
   <header>
     <nav class="navbar">
       <div class="logo">ProBuild</div>
@@ -46,8 +31,8 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" style="background:url('assets/serviceprovider/hero-bg.jpg') center/cover no-repeat;">
+  <!-- ================= Hero ================= -->
+  <section class="hero provider-hero">
     <div class="hero-content">
       <h1>Partner with ProBuild</h1>
       <p>We connect verified service providers with real customers — grow your business with us.</p>
@@ -55,88 +40,88 @@
     </div>
   </section>
 
-  <!-- Main Content -->
+  <!-- ================= Main Content ================= -->
   <section class="services">
     <h2>Choose Your Provider Category</h2>
-    <p>Select which services you provide — click a card to show the related submission form link.</p>
+    <p>Select which services you provide — click a card to reveal the form links.</p>
 
     <div class="service-grid">
-      <div class="service-card" role="button" onclick="toggleSection('property')">
-        <img src="assets/service-icons/property.png" alt="Property icon" loading="lazy">
+      <div class="service-card" role="button" onclick="toggleSection('property')" aria-expanded="false">
+        <img src="assets/icons/property.png" alt="Property icon" loading="lazy">
         <h3>🏠 Property Provider</h3>
         <p>Commercial, Residential & Warehouse</p>
       </div>
 
-      <div class="service-card" role="button" onclick="toggleSection('construction')">
-        <img src="assets/service-icons/construction.png" alt="Construction icon" loading="lazy">
+      <div class="service-card" role="button" onclick="toggleSection('construction')" aria-expanded="false">
+        <img src="assets/icons/construction.png" alt="Construction icon" loading="lazy">
         <h3>🏗️ Construction Provider</h3>
         <p>Architects, Contractors, Material Suppliers</p>
       </div>
 
-      <div class="service-card" role="button" onclick="toggleSection('packers')">
-        <img src="assets/service-icons/packers.png" alt="Packers icon" loading="lazy">
+      <div class="service-card" role="button" onclick="toggleSection('packers')" aria-expanded="false">
+        <img src="assets/icons/packers.png" alt="Packers icon" loading="lazy">
         <h3>🚚 Packers & Movers</h3>
         <p>Home shifting, Office relocation & Storage</p>
       </div>
 
-      <div class="service-card" role="button" onclick="toggleSection('manpower')">
-        <img src="assets/service-icons/manpower.png" alt="Manpower icon" loading="lazy">
+      <div class="service-card" role="button" onclick="toggleSection('manpower')" aria-expanded="false">
+        <img src="assets/icons/manpower.png" alt="Manpower icon" loading="lazy">
         <h3>👷 Manpower Provider</h3>
         <p>Skilled, Unskilled, Technicians & Others</p>
       </div>
     </div>
 
-    <!-- Subcategory blocks (collapsed by default) -->
-    <div id="property" class="subcategory" style="display:none;">
-      <h3>Property — Choose one</h3>
+    <!-- ========== Subcategory Sections (Initially Hidden) ========== -->
+    <div id="property" class="subcategory" hidden>
+      <h3>Property — Choose One</h3>
       <ul>
-        <li><a href="https://forms.gle/YOUR_RESIDENTIAL_FORM" target="_blank">Residential Property (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_COMMERCIAL_FORM" target="_blank">Commercial Property (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_WAREHOUSE_FORM" target="_blank">Warehouse (Form)</a></li>
+        <li><a href="https://forms.gle/YOUR_RESIDENTIAL_FORM" target="_blank">Residential Property</a></li>
+        <li><a href="https://forms.gle/YOUR_COMMERCIAL_FORM" target="_blank">Commercial Property</a></li>
+        <li><a href="https://forms.gle/YOUR_WAREHOUSE_FORM" target="_blank">Warehouse</a></li>
       </ul>
     </div>
 
-    <div id="construction" class="subcategory" style="display:none;">
-      <h3>Construction — Choose one</h3>
+    <div id="construction" class="subcategory" hidden>
+      <h3>Construction — Choose One</h3>
       <ul>
-        <li><a href="https://forms.gle/YOUR_ARCHITECTURE_FORM" target="_blank">Architecture & Design (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_MATERIAL_FORM" target="_blank">Material Supplier (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_INTERIOR_FORM" target="_blank">Interior / Furniture (Form)</a></li>
+        <li><a href="https://forms.gle/YOUR_ARCHITECTURE_FORM" target="_blank">Architecture & Design</a></li>
+        <li><a href="https://forms.gle/YOUR_MATERIAL_FORM" target="_blank">Material Supplier</a></li>
+        <li><a href="https://forms.gle/YOUR_INTERIOR_FORM" target="_blank">Interior / Furniture</a></li>
       </ul>
     </div>
 
-    <div id="packers" class="subcategory" style="display:none;">
-      <h3>Packers & Movers — Choose one</h3>
+    <div id="packers" class="subcategory" hidden>
+      <h3>Packers & Movers — Choose One</h3>
       <ul>
-        <li><a href="https://forms.gle/YOUR_HOME_FORM" target="_blank">Home Shifting (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_OFFICE_FORM" target="_blank">Office Relocation (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_STORAGE_FORM" target="_blank">Storage & Warehousing (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_LOADING_FORM" target="_blank">Loading & Unloading (Form)</a></li>
+        <li><a href="https://forms.gle/YOUR_HOME_FORM" target="_blank">Home Shifting</a></li>
+        <li><a href="https://forms.gle/YOUR_OFFICE_FORM" target="_blank">Office Relocation</a></li>
+        <li><a href="https://forms.gle/YOUR_STORAGE_FORM" target="_blank">Storage & Warehousing</a></li>
+        <li><a href="https://forms.gle/YOUR_LOADING_FORM" target="_blank">Loading & Unloading</a></li>
       </ul>
     </div>
 
-    <div id="manpower" class="subcategory" style="display:none;">
-      <h3>Manpower — Choose one</h3>
+    <div id="manpower" class="subcategory" hidden>
+      <h3>Manpower — Choose One</h3>
       <ul>
-        <li><a href="https://forms.gle/YOUR_SKILLED_FORM" target="_blank">Skilled Workers (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_ELECTRICIAN_FORM" target="_blank">Electricians (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_PLUMBER_FORM" target="_blank">Plumbers (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_PAINTER_FORM" target="_blank">Painters (Form)</a></li>
-        <li><a href="https://forms.gle/YOUR_OTHERS_FORM" target="_blank">Others (Form)</a></li>
+        <li><a href="https://forms.gle/YOUR_SKILLED_FORM" target="_blank">Skilled Workers</a></li>
+        <li><a href="https://forms.gle/YOUR_ELECTRICIAN_FORM" target="_blank">Electricians</a></li>
+        <li><a href="https://forms.gle/YOUR_PLUMBER_FORM" target="_blank">Plumbers</a></li>
+        <li><a href="https://forms.gle/YOUR_PAINTER_FORM" target="_blank">Painters</a></li>
+        <li><a href="https://forms.gle/YOUR_OTHERS_FORM" target="_blank">Others</a></li>
       </ul>
     </div>
-
   </section>
 
-  <!-- Confused / Help section -->
+  <!-- ================= Help Section ================= -->
   <section class="help-section">
     <h3>🤔 Are you confused?</h3>
     <p>Talk to our customer executive at <strong>+91-98765-43210</strong></p>
   </section>
 
-  <!-- Footer -->
+  <!-- ================= Footer ================= -->
   <footer>
-    <p>© 2025 ProBuild Services | Greater Noida & Noida | All Rights Reserved</p>
+    <p>© 2025 ProBuild Services | Noida & Greater Noida</p>
   </footer>
+
 </body>
 </html>
