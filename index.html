@@ -8,6 +8,42 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Founders Section */
+    .founders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .founder-card {
+      text-align: center;
+      border: 1px solid #eee;
+      padding: 15px;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .founder-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .founder-card h3 {
+      font-size: 1.1rem;
+      margin: 5px 0;
+    }
+
+    .founder-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
@@ -28,11 +64,11 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="hero" style="background: url('assets/hero-bg.jpg') center/cover no-repeat; height: 90vh; display: flex; align-items: center; justify-content: center;">
-    <div class="hero-content" style="text-align: center; color: #fff; max-width: 700px; padding: 0 20px;">
-      <h1 style="font-size: 3rem; margin-bottom: 20px;">Welcome to ProBuild Services</h1>
-      <p style="font-size: 1.2rem; margin-bottom: 30px;">Reliable Property, Construction, Packers & Movers, and Manpower solutions in Noida & Greater Noida.</p>
-      <a href="#services" class="btn-primary" style="padding: 12px 30px; font-size: 1rem;">Explore Services</a>
+  <section id="home" class="hero" style="background:url('assets/hero-bg.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Welcome to ProBuild Services</h1>
+      <p>Reliable Property, Construction, Packers & Movers, and Manpower solutions in Noida & Greater Noida.</p>
+      <a href="#services" class="btn-primary">Explore Services</a>
     </div>
   </section>
 
@@ -78,10 +114,10 @@
     </div>
   </section>
 
-  <!-- Founders (Horizontal) -->
+  <!-- Founders (Grid) -->
   <section class="founders">
     <h2>Meet Our Founders</h2>
-    <div class="founders-grid horizontal">
+    <div class="founders-grid">
       <div class="founder-card">
         <img src="assets/founders/santosh.jpg" alt="Portrait of Mr. Santosh Gupta" />
         <h3>Mr. Santosh Gupta</h3>
