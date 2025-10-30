@@ -236,3 +236,36 @@ footer {
     padding: 40px 5%;
   }
 }
+/* Founders Section */
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.founder-card {
+  text-align: center;
+  border: 1px solid #eee; /* optional border */
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff; /* optional background */
+}
+
+.founder-card img {
+  width: 150px;      /* sets uniform width */
+  height: 150px;     /* sets uniform height */
+  object-fit: cover; /* crops image nicely */
+  border-radius: 50%; /* makes it circular */
+  margin-bottom: 10px;
+}
+
+.founder-card h3 {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.founder-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
