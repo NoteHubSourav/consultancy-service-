@@ -1,16 +1,18 @@
-// ----------------------
+// ==========================
 // MOBILE MENU TOGGLE
-// ----------------------
+// ==========================
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
 
-// ----------------------
+// ==========================
 // SMOOTH SCROLLING FOR INTERNAL LINKS
-// ----------------------
+// ==========================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -25,9 +27,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ----------------------
-// WHATSAPP FLOATING BUTTON CLICK
-// ----------------------
+// ==========================
+// WHATSAPP FLOATING BUTTON
+// ==========================
 const whatsappBtn = document.querySelector('.whatsapp-float');
 
 if (whatsappBtn) {
@@ -36,25 +38,27 @@ if (whatsappBtn) {
   });
 }
 
-// ----------------------
-// OPTIONAL: ADD ACTIVE LINK BASED ON SCROLL
-// ----------------------
-const sections = document.querySelectorAll('section');
+// ==========================
+// ACTIVE LINK BASED ON SCROLL
+// ==========================
+const sections = document.querySelectorAll('section[id]');
 const navItems = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {
-  let current = '';
+  let currentSectionId = '';
+
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 70;
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute('id');
+    const sectionTop = section.offsetTop - 80; // offset for navbar height
+    const sectionHeight = section.offsetHeight;
+    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+      currentSectionId = section.getAttribute('id');
     }
   });
 
-  navItems.forEach(a => {
-    a.classList.remove('active');
-    if (a.getAttribute('href') === '#' + current) {
-      a.classList.add('active');
+  navItems.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${currentSectionId}`) {
+      link.classList.add('active');
     }
   });
 });
