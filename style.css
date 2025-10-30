@@ -63,7 +63,7 @@ a {
 /* ==========================
    HERO SECTION
 ========================== */
-.hero {
+.page-hero {
   height: 90vh;
   display: flex;
   align-items: center;
@@ -73,20 +73,23 @@ a {
   color: #fff;
 }
 
-.hero::before {
+.page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
 }
 
-.hero-content {
+.page-hero .hero-content {
   position: relative;
   z-index: 2;
   max-width: 700px;
   padding: 0 20px;
 }
 
+/* ==========================
+   BUTTONS
+========================== */
 .btn-primary {
   background: #0a73b1;
   color: #fff;
@@ -133,7 +136,7 @@ a {
   box-shadow: 0 8px 18px rgba(0,0,0,0.1);
 }
 
-.service-card img {
+.service-card .icon-box img {
   width: 70px;
   margin-bottom: 15px;
 }
@@ -176,8 +179,7 @@ a {
 /* ==========================
    HELP / CONFUSED SECTION
 ========================== */
-.help-section,
-.confused {
+.help-section {
   text-align: center;
   padding: 60px 10%;
   background: #f1faff;
@@ -189,8 +191,7 @@ a {
   margin-bottom: 12px;
 }
 
-.help-section p,
-.confused p {
+.help-section p {
   font-size: 1.1em;
   font-weight: 500;
 }
@@ -229,7 +230,7 @@ footer {
     justify-content: center;
   }
 
-  .hero {
+  .page-hero {
     height: 70vh;
   }
 
@@ -243,7 +244,7 @@ footer {
   }
 
   .help-section,
-  .confused {
+  .contact {
     padding: 40px 5%;
   }
 }
