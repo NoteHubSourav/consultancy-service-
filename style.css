@@ -21,34 +21,6 @@ a {
   text-decoration: none;
   color: inherit;
 }  
-/* ==========================
-   PACKERS & MOVERS HERO
-========================== */
-.packers-hero {
-  background: url('assets/packers-bg.jpg') center/cover no-repeat;
-  position: relative;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-}
-
-.packers-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* overlay for better readability */
-}
-
-.packers-hero .hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  padding: 0 20px;
-}
-
 
 /* ==========================
    NAVBAR
@@ -89,9 +61,10 @@ a {
 }
 
 /* ==========================
-   HERO SECTION
+   HERO SECTIONS (All Pages)
 ========================== */
-.page-hero {
+.page-hero,
+.packers-hero {
   height: 90vh;
   display: flex;
   align-items: center;
@@ -101,18 +74,45 @@ a {
   color: #fff;
 }
 
-.page-hero::before {
+.page-hero::before,
+.packers-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.45); /* overlay for readability */
 }
 
-.page-hero .hero-content {
+.page-hero .hero-content,
+.packers-hero .hero-content {
   position: relative;
   z-index: 2;
   max-width: 700px;
   padding: 0 20px;
+}
+
+/* Specific Hero Backgrounds */
+.page-hero.index-hero {
+  background: url('assets/hero-bg.jpg') center/cover no-repeat;
+}
+
+.page-hero.property-hero {
+  background: url('assets/property-bg.jpg') center/cover no-repeat;
+}
+
+.page-hero.construction-hero {
+  background: url('assets/construction-bg.jpg') center/cover no-repeat;
+}
+
+.page-hero.manpower-hero {
+  background: url('assets/manpower-bg.jpg') center/cover no-repeat;
+}
+
+.page-hero.packers-hero {
+  background: url('assets/packers-bg.jpg') center/cover no-repeat;
+}
+
+.page-hero.serviceprovider-hero {
+  background: url('assets/serviceprovider-bg.jpg') center/cover no-repeat;
 }
 
 /* ==========================
@@ -167,41 +167,6 @@ a {
 .service-card .icon-box img {
   width: 70px;
   margin-bottom: 15px;
-}
-
-/* ==========================
-   SUBCATEGORY / COLLAPSIBLE SECTIONS
-========================== */
-.subcategory {
-  background: #f1faff;
-  border-left: 3px solid #0a73b1;
-  margin: 20px 10%;
-  padding: 20px;
-  border-radius: 8px;
-  display: none;
-}
-
-.subcategory h3 {
-  margin-top: 0;
-  color: #0a73b1;
-}
-
-.subcategory ul {
-  padding-left: 20px;
-  margin: 10px 0 0;
-}
-
-.subcategory ul li {
-  margin-bottom: 8px;
-}
-
-.subcategory ul li a {
-  color: #0a73b1;
-  font-weight: 500;
-}
-
-.subcategory ul li a:hover {
-  text-decoration: underline;
 }
 
 /* ==========================
@@ -264,11 +229,6 @@ footer {
 
   .service-grid {
     gap: 25px;
-  }
-
-  .subcategory {
-    margin: 20px 5%;
-    padding: 15px;
   }
 
   .help-section,
