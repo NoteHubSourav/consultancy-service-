@@ -3,125 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service Provider Partnership | ProBuild</title>
-
-  <!-- Styles -->
+  <title>ProBuild Services | Service Provider</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-
-  <!-- JavaScript -->
-  <script src="script.js" defer></script>
 </head>
-
 <body>
 
-  <!-- ================= Navbar ================= -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">ProBuild</div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ProBuild</div>
+    <nav>
       <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="property.html">Property</a></li>
         <li><a href="construction.html">Construction</a></li>
         <li><a href="packers.html">Packers & Movers</a></li>
         <li><a href="manpower.html">Manpower</a></li>
-        <li><a href="serviceprovider.html" class="active">For Service Providers</a></li>
+        <li><a href="serviceprovider.html" class="active">Service Provider</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ================= Hero ================= -->
-  <section class="hero provider-hero">
-    <div class="hero-content">
-      <h1>Partner with ProBuild</h1>
-      <p>We connect verified service providers with real customers — grow your business with us.</p>
-      <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="btn-primary" target="_blank">Join as Partner</a>
-    </div>
-  </section>
-
-  <!-- ================= Main Content ================= -->
-  <section class="services">
-    <h2>Choose Your Provider Category</h2>
-    <p>Select which services you provide — click a card to reveal the form links.</p>
-
-    <div class="service-grid">
-      <div class="service-card" role="button" onclick="toggleSection('property')" aria-expanded="false">
-        <img src="assets/icons/property.png" alt="Property icon" loading="lazy">
-        <h3>🏠 Property Provider</h3>
-        <p>Commercial, Residential & Warehouse</p>
-      </div>
-
-      <div class="service-card" role="button" onclick="toggleSection('construction')" aria-expanded="false">
-        <img src="assets/icons/construction.png" alt="Construction icon" loading="lazy">
-        <h3>🏗️ Construction Provider</h3>
-        <p>Architects, Contractors, Material Suppliers</p>
-      </div>
-
-      <div class="service-card" role="button" onclick="toggleSection('packers')" aria-expanded="false">
-        <img src="assets/icons/packers.png" alt="Packers icon" loading="lazy">
-        <h3>🚚 Packers & Movers</h3>
-        <p>Home shifting, Office relocation & Storage</p>
-      </div>
-
-      <div class="service-card" role="button" onclick="toggleSection('manpower')" aria-expanded="false">
-        <img src="assets/icons/manpower.png" alt="Manpower icon" loading="lazy">
-        <h3>👷 Manpower Provider</h3>
-        <p>Skilled, Unskilled, Technicians & Others</p>
-      </div>
-    </div>
-
-    <!-- ========== Subcategory Sections (Initially Hidden) ========== -->
-    <div id="property" class="subcategory" hidden>
-      <h3>Property — Choose One</h3>
-      <ul>
-        <li><a href="https://forms.gle/YOUR_RESIDENTIAL_FORM" target="_blank">Residential Property</a></li>
-        <li><a href="https://forms.gle/YOUR_COMMERCIAL_FORM" target="_blank">Commercial Property</a></li>
-        <li><a href="https://forms.gle/YOUR_WAREHOUSE_FORM" target="_blank">Warehouse</a></li>
-      </ul>
-    </div>
-
-    <div id="construction" class="subcategory" hidden>
-      <h3>Construction — Choose One</h3>
-      <ul>
-        <li><a href="https://forms.gle/YOUR_ARCHITECTURE_FORM" target="_blank">Architecture & Design</a></li>
-        <li><a href="https://forms.gle/YOUR_MATERIAL_FORM" target="_blank">Material Supplier</a></li>
-        <li><a href="https://forms.gle/YOUR_INTERIOR_FORM" target="_blank">Interior / Furniture</a></li>
-      </ul>
-    </div>
-
-    <div id="packers" class="subcategory" hidden>
-      <h3>Packers & Movers — Choose One</h3>
-      <ul>
-        <li><a href="https://forms.gle/YOUR_HOME_FORM" target="_blank">Home Shifting</a></li>
-        <li><a href="https://forms.gle/YOUR_OFFICE_FORM" target="_blank">Office Relocation</a></li>
-        <li><a href="https://forms.gle/YOUR_STORAGE_FORM" target="_blank">Storage & Warehousing</a></li>
-        <li><a href="https://forms.gle/YOUR_LOADING_FORM" target="_blank">Loading & Unloading</a></li>
-      </ul>
-    </div>
-
-    <div id="manpower" class="subcategory" hidden>
-      <h3>Manpower — Choose One</h3>
-      <ul>
-        <li><a href="https://forms.gle/YOUR_SKILLED_FORM" target="_blank">Skilled Workers</a></li>
-        <li><a href="https://forms.gle/YOUR_ELECTRICIAN_FORM" target="_blank">Electricians</a></li>
-        <li><a href="https://forms.gle/YOUR_PLUMBER_FORM" target="_blank">Plumbers</a></li>
-        <li><a href="https://forms.gle/YOUR_PAINTER_FORM" target="_blank">Painters</a></li>
-        <li><a href="https://forms.gle/YOUR_OTHERS_FORM" target="_blank">Others</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ================= Help Section ================= -->
+  <!-- Help Section -->
   <section class="help-section">
-    <h3>🤔 Are you confused?</h3>
+    <h3>🤔 Need Guidance?</h3>
     <p>Talk to our customer executive at <strong>+91-98765-43210</strong></p>
   </section>
 
-  <!-- ================= Footer ================= -->
-  <footer>
-    <p>© 2025 ProBuild Services | Noida & Greater Noida</p>
-  </footer>
+  <!-- Hero Section -->
+  <section class="page-hero serviceprovider-hero">
+    <div class="hero-content">
+      <h1>Service Providers</h1>
+      <p>Connect with trusted service providers for all your home and business needs.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Service Categories</h2>
+    <p>Choose from a variety of professional services to meet your requirements.</p>
+
+    <div class="service-grid">
+      <a href="#" class="service-card">
+        <div class="icon-box"><img src="assets/icons/electrician.png" alt="Electrician Icon" /></div>
+        <h3>Electricians</h3>
+        <p>Skilled electricians for installations and repairs.</p>
+      </a>
+
+      <a href="#" class="service-card">
+        <div class="icon-box"><img src="assets/icons/plumber.png" alt="Plumber Icon" /></div>
+        <h3>Plumbers</h3>
+        <p>Professional plumbing services for homes and offices.</p>
+      </a>
+
+      <a href="#" class="service-card">
+        <div class="icon-box"><img src="assets/icons/cleaning.png" alt="Cleaning Icon" /></div>
+        <h3>Cleaning Services</h3>
+        <p>Residential and commercial cleaning services.</p>
+      </a>
+
+      <a href="#" class="service-card">
+        <div class="icon-box"><img src="assets/icons/others.png" alt="Other Services Icon" /></div>
+        <h3>Others</h3>
+        <p>Any other professional services you require.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Looking for a Service Provider?</h2>
+    <p>Submit your request, and we’ll connect you with the right professionals.</p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-primary contact-btn">
+      Submit Service Request
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>© 2025 ProBuild Services | Noida & Greater Noida</footer>
 
 </body>
 </html>
